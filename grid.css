@@ -1,0 +1,43 @@
+.item-a {
+  grid-area: nav;
+}
+.item-b {
+  grid-area: pesq;
+
+}
+.item-c {
+  grid-area: panel;
+    margin: 5px;
+
+}
+
+
+.item-d {
+  grid-area: footer;
+
+}
+
+.item-e {
+  grid-area: pesqa;
+
+}
+.item-f {
+    grid-area: topo;
+
+
+}
+
+
+.grid-container {
+  display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 75px 600px 1fr;
+  grid-template-areas:
+    " . topo topo . "
+    " . nav nav . "
+    ". pesq pesq ."
+    ". pesqa . . "
+    " . . panel . "
+    ". footer footer .";
+
+}
